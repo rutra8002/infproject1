@@ -45,6 +45,8 @@ class GUI:
                 self.parity.config(text="Even")
             elif number % 2 == 1:
                 self.parity.config(text="Odd")
+            else:
+                self.parity.config(text="Invalid input")
         except ValueError:
             self.parity.config(text="Invalid input")
 
